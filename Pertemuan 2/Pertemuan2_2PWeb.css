@@ -1,0 +1,36 @@
+/* * {
+    background: blue;
+} */
+.container div {
+    background: red;
+    height: 100px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+    background-color: navy;
+    }
+    }
+   
+    /* Aturan CSS untuk layar menengah (tablet) */
+    @media screen and (min-width: 768px) and (max-width:
+   1199px) {
+    body {
+    background-color: green;
+    }
+    }
+   
+    /* Aturan CSS untuk layar kecil (ponsel) */
+    @media screen and (max-width: 767px) {
+    body {
+    background-color: gray;
+    }
+    }
+   
