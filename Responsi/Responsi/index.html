@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+    <header> 
+        <img src="Image/Rhine_Lab.png" alt="" style="width:60px;height:60px;">
+        <a href="index.html" class="watermark">Rhine Lab</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="work.html">Work</a>
+            <a href="about.html">About</a>
+        </div>
+    </header>
+
+    <section class="main" id="main">
+        <div class="content">
+            <h2>Hello, We are <br><span>Rhine Lab Inc.</span></h2> 
+            <div class="animated-text">
+                <h3>Materials</h3>
+                <h3>Building</h3>
+                <h3>Trading</h3>
+            </div>
+            <a href="work.html" class="btn">Work</a>
+            <div class="italic"><p><i>	A famous technology organization from Columbia,<br>
+                committed to expanding the practical applications of all kinds of cutting-edge technology.</i></p></div>
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <div class="title">
+            <h2 class="section-title">Gallery</h2>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="row">
+            <div class="column">
+              <img src="Image/Background-Rhine_Lab_HQ.png" alt="">
+              <img src="Image/Background-Rhine_Lab_Corridor.png" alt="">
+            </div>
+            <div class="column">
+                <img src="Image/Background-Rhine_Lab_Meeting_Room.png" alt="">
+                <img src="Image/Background-Rhine_Lab_HQ_Control_Office.png" alt="">
+            </div>
+            <div class="column">
+                <img src="Image/Background-Rhine_Lab_Observation_Post.png" alt="">
+                <img src="Image/Rhine_Lab_Official_Wallpaper_4.png" alt="">
+            </div>
+        </div>
+    </section>
+
+<!-- menambah atau menghapus class saat melakukan scroll pada halaman web. -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const header = document.querySelector("header");
+            
+            // jika scroll kebawah, sticky ditambahkan
+            if (header) {
+                window.addEventListener("scroll", function () {
+                    header.classList.toggle("sticky", window.scrollY > 0);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

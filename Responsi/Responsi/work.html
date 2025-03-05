@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+
+    <header> 
+        <img src="Image/Rhine_Lab.png" alt="" style="width:60px;height:60px;">
+        <a href="index.html" class="watermark">Rhine Lab</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="work.html">Work</a>
+            <a href="about.html">About</a>
+        </div>
+    </header>
+
+    <section class="work" id="work">
+        <div class="title">
+            <h2 class="section-title">What we do</h2>
+        </div>
+        <div class="content">
+            <div class="col-left">
+                <div class="img-card">
+                    <img src="Image/Materials.png" alt="" >
+                </div>
+            </div>
+            <div class="col-right">
+                <h2 class="content-title">Upgrade Materials</h2>
+                <p class="content-lil">A material commonly used as an isolation coating for delicate equipment. Its bonding effect is strong enough to interrupt the volatilization of Originium.</p>
+            </div>
+        </div>
+    
+        <div class="content">
+            <div class="col-left">
+                <div class="img-card_2">
+                    <img src="Image/MaterialBuilding.png" alt="" >
+                </div>
+            </div>
+            <div class="col-right">
+                <h2 class="content-title">Building Materials</h2>
+                <p class="content-lil">Room modification causes irreversible damage to load bearing parts if not handled properly. Please use building materials before commencing modification in order to guarantee the integrity of the room.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="col-left">
+                <div class="img-card_3">
+                    <img src="Image/MaterialTrading.png" alt="" >
+                </div>
+            </div>
+            <div class="col-right">
+                <h2 class="content-title">Trading Materials</h2>
+                <p class="content-lil">How much ore does it take to make such valuable gold bars? It doesn't matter. What matters is that they're yours.</p>
+            </div>
+        </div>
+    </section>
+    
+<!-- menambah atau menghapus class saat melakukan scroll pada halaman web. -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector("header");
+        
+        // jika scroll kebawah, sticky ditambahkan
+        if (header) {
+            window.addEventListener("scroll", function () {
+                header.classList.toggle("sticky", window.scrollY > 0);
+            });
+        }
+    });
+</script>
+</body>
+</html>
